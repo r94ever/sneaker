@@ -1,6 +1,6 @@
 <?php
 
-namespace SquareBoat\Sneaker;
+namespace Qmas\Sneaker;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -32,7 +32,7 @@ class SneakerServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \SquareBoat\Sneaker\Commands\Sneak::class,
+                \Qmas\Sneaker\Commands\Sneak::class,
             ]);
         }
     }

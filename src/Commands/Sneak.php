@@ -1,11 +1,11 @@
 <?php
 
-namespace SquareBoat\Sneaker\Commands;
+namespace Qmas\Sneaker\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Config\Repository;
-use SquareBoat\Sneaker\Exceptions\DummyException;
+use Qmas\Sneaker\Exceptions\DummyException;
 use Symfony\Component\Console\Application as ConsoleApplication;
 
 class Sneak extends Command

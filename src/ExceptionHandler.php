@@ -1,6 +1,6 @@
 <?php
 
-namespace SquareBoat\Sneaker;
+namespace Qmas\Sneaker;
 
 use Illuminate\View\Factory;
 use Symfony\Component\Debug\Exception\FlattenException;

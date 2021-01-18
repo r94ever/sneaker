@@ -1,6 +1,6 @@
 <?php
 
-namespace SquareBoat\Sneaker\Exceptions;
+namespace Qmas\Sneaker\Exceptions;
 
 use Exception;
 

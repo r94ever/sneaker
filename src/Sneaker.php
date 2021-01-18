@@ -1,6 +1,6 @@
 <?php
 
-namespace SquareBoat\Sneaker;
+namespace Qmas\Sneaker;
 
 use Psr\Log\LoggerInterface;
 use Illuminate\Contracts\Mail\Mailer;
@@ -18,7 +18,7 @@ class Sneaker
     /**
      * The exception handler implementation.
      *
-     * @var \SquareBoat\Sneaker\ExceptionHandler
+     * @var \Qmas\Sneaker\ExceptionHandler
      */
     private $handler;
 
@@ -40,7 +40,7 @@ class Sneaker
      * Create a new sneaker instance.
      *
      * @param  \Illuminate\Config\Repository $config
-     * @param  \SquareBoat\Sneaker\ExceptionHandler $handler
+     * @param  \Qmas\Sneaker\ExceptionHandler $handler
      * @param  \Illuminate\Contracts\Mail\Mailer $mailer
      * @param  \Psr\Log\LoggerInterface $logger
      * @return void

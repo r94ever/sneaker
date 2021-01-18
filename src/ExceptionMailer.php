@@ -1,6 +1,6 @@
 <?php
 
-namespace SquareBoat\Sneaker;
+namespace Qmas\Sneaker;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

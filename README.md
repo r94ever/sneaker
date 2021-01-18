@@ -11,7 +11,7 @@ An easy way to send emails with stack trace whenever an exception occurs on the 
 #### For Laravel <= 5.2, please use the [v1 branch](https://github.com/squareboat/sneaker/tree/v1)!
 
 ```
-$ composer require squareboat/sneaker
+$ composer require qmas/sneaker
 ```
 
 ### Configure Laravel
@@ -22,7 +22,7 @@ If you are using laravel 5.3 or 5.4, simply add the service provider to your pro
 
 #### Service Provider
 ```
-SquareBoat\Sneaker\SneakerServiceProvider::class,
+Qmas\Sneaker\SneakerServiceProvider::class,
 ```
 
 ### Add Sneaker's Exception Capturing
@@ -43,7 +43,7 @@ public function report(Exception $exception)
 Create the Sneaker configuration file  with this command:
 
 ```bash
-$ php artisan vendor:publish --provider="SquareBoat\Sneaker\SneakerServiceProvider"
+$ php artisan vendor:publish --provider="Qmas\Sneaker\SneakerServiceProvider"
 ```
 
 The config file will be published in  `config/sneaker.php`
@@ -122,7 +122,7 @@ This is the list of bots for which we should NOT send error emails.
 If you need to customize the subject and body of email, run following command:
 
 ```bash
-$ php artisan vendor:publish --provider="SquareBoat\Sneaker\SneakerServiceProvider"
+$ php artisan vendor:publish --provider="Qmas\Sneaker\SneakerServiceProvider"
 ```
 
 > Note - Don't run this command again if you have run it already.
@@ -139,7 +139,7 @@ To verify that Sneaker is configured correctly and our integration is working, u
 $ php artisan sneaker:sneak
 ```
 
-A `SquareBoat\Sneaker\Exceptions\DummyException` class will be thrown and captured by Sneaker. The captured exception will appear in your configured email immediately.
+A `Qmas\Sneaker\Exceptions\DummyException` class will be thrown and captured by Sneaker. The captured exception will appear in your configured email immediately.
 
 ## Security
 
